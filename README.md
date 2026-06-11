@@ -1,7 +1,5 @@
 # Traffic Light Controller using Verilog FSM
 
-## Overview
-
 This project implements a **Traffic Light Controller** using a **Finite State Machine (FSM)** in Verilog HDL. The controller manages traffic flow between two roads by cycling through a sequence of traffic light states.
 
 The design was simulated and verified using **Xilinx Vivado**, and the waveform confirms correct state transitions and signal generation.
@@ -90,7 +88,7 @@ The controller continuously cycles through these states.
 
 # Verilog Design Code
 
-## traffic_light.v
+### traffic_light.v
 
 ```verilog
 module traffic_light(
@@ -164,7 +162,7 @@ endmodule
 
 # Testbench
 
-## traffic_light_tb.v
+### traffic_light_tb.v
 
 ```verilog
 `timescale 1ns / 1ps
@@ -335,25 +333,6 @@ S0 → S1 → S2 → S3 → S0
 which matches the expected FSM operation.
 
 ---
-
-# Functional Verification
-
-The simulation confirms that:
-
-✔ Reset correctly initializes the FSM.
-
-✔ State transitions occur on every positive edge of the clock.
-
-✔ Traffic signals follow the intended sequence.
-
-✔ Only one road receives a green signal at a time.
-
-✔ No conflicting green signals occur.
-
-✔ The FSM continuously cycles through all four states.
-
----
-
 # Applications
 
 Traffic Light Controllers are widely used in:
@@ -367,28 +346,6 @@ Traffic Light Controllers are widely used in:
 
 ---
 
-# Learning Outcomes
-
-Through this project, the following concepts were learned:
-
-- Finite State Machines (FSMs)
-- Sequential Logic Design
-- State Transition Logic
-- Output Logic Design
-- Verilog HDL Coding
-- Behavioral Simulation
-- Waveform Analysis
-- Digital System Verification
-
----
-
 # Conclusion
 
 This project successfully implements a Traffic Light Controller using a Finite State Machine in Verilog HDL. The controller cycles through four traffic signal states and safely manages traffic flow between two roads. Simulation results obtained using Xilinx Vivado confirm correct state transitions and output generation, demonstrating the effectiveness of FSM-based control systems.
-
----
-
-## Author
-
-**Farhana N S**  
-Electronics Engineering Student
